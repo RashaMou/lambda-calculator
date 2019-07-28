@@ -1,9 +1,11 @@
 import React from "react";
 
-const OperatorButton = () => {
+const OperatorButton = (props) => {
+  console.log('OperatorButton.js: OperatorButton: props', props); 
+
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button {...props.operator} /> // spread operator because object contains more than one property
   );
 };
+
+export default OperatorButton;
