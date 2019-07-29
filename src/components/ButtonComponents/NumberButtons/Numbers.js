@@ -9,7 +9,7 @@ import NumberButton from './NumberButton'; //we import the component so we can r
 
 const Numbers = () => { // do we need to define props here to pass them to NumberButton?
   // STEP 2 - add the imported data to state
-  // const [numberState, setNumberState] = useState(numbers); // why do we need this here?
+  const [numberState, setNumberState] = useState(numbers); 
 
   return (
     <div>

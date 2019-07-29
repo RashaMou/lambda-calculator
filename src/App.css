@@ -1,0 +1,42 @@
+.container {
+  background-color: #bb1333;
+}
+
+.display {
+  background-color: #55596d;
+  width: 300px;
+  height: 100px;
+  border-top-right-radius: 40px 30px;
+  border-bottom-right-radius: 40px 30px;
+  border-top-left-radius: 40px 30px;
+  border-bottom-left-radius: 40px 30px;
+  margin: 0 auto;
+}
+button {
+  border: none;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 5px;
+  color: white;
+  font-size: 2.5rem;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 3px 0 2px #55596d;
+}
+
+.operator-buttons {
+  background-color: #3ab5e5;
+}
+
+.number-buttons {
+  background-color: #0c3c78;
+}
+
+.special-buttons-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.special-buttons {
+  background-color: #1a61b0;
+}
