@@ -1,7 +1,7 @@
 import React from "react";
 
 const NumberButton = (props) => { // this is coming from Numbers, but how?
-  console.log('NumberButton.js: NumberButton: props', props); 
+  // console.log('NumberButton.js: NumberButton: props', props); 
   return (
     <button>{props.num}</button> //props.num (object.key) will give us each number button. Props is passed from Numbers, which is a parent of NumberButton. It was declared when we returned the NumberButton component: return <NumberButton num={number} key={number}/> 
       /* Display a button element rendering the data being passed down from the parent container on props */

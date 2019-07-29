@@ -11,6 +11,7 @@ const Specials = () => {
   return (
     <div>
       {specials.map(special => {
+        // console.log('Specials.js: Specials: special', special)
         return (
           <SpecialButton special={special} key={special}/>
         )

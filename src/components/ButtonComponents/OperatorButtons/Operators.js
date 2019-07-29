@@ -6,12 +6,13 @@ import {operators} from './../../../data';
 import OperatorButton from './OperatorButton';
 
 
-const Operators = (props) => {
+const Operators = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>
       {operators.map(operator => {
-        return <OperatorButton operator={operator} key={operator} />
+        // console.log('Operators.js: Operator: operator.char', operator.char)
+        return <OperatorButton operator={operator.char} key={operator.char} />
       })}
     </div>
   );

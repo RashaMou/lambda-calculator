@@ -1,8 +1,8 @@
 import React from "react";
 
-const SpecialButton = (props) => { // props comes from specials
+const SpecialButton = (props) => { 
   return (
-    <button {...props.special} />
+    <button>{props.special}</button>
   );
 };
 
