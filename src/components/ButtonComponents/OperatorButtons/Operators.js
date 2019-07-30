@@ -8,7 +8,8 @@ import OperatorButton from './OperatorButton';
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
-  // const [operatorState, setOperatorState] = useState(operators); 
+  const [operatorState] = useState(operators); 
+
   return (
     <div>
       {operators.map(operator => {
