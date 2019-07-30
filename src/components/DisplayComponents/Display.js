@@ -1,7 +1,7 @@
 import React from "react";
 
 const Display = () => {
-  return <div class='display'></div>;
+  return <input type='number' placeholder='0' className='display' />;
 };
 
 export default Display;

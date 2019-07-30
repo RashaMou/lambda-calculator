@@ -9,12 +9,13 @@ import NumberButton from './NumberButton'; //we import the component so we can r
 
 const Numbers = () => { // do we need to define props here to pass them to NumberButton?
   // STEP 2 - add the imported data to state
-  const [numberState, setNumberState] = useState(numbers); 
+  // const [numberState, setNumberState] = useState(numbers); 
 
   return (
     <div>
-      {numbers.map(number => {
-        return <NumberButton num={number} key={number}/> // "key" property is only for React to identify number order. Set it and forget it. 
+      {numbers.map((number, index) => {
+        return <NumberButton num={number} index={index} key={number}/> // "key" property is only for React to identify number order. Set it and forget it. 
+        
       })
         /* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass

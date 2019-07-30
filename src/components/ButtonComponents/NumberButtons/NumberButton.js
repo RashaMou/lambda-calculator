@@ -4,13 +4,9 @@ import React from "react";
 // ? The div container below is added to each button. How to add div to the whole set of numbers?
 
 const NumberButton = (props) => { // this is coming from Numbers, but how?
-  // console.log('NumberButton.js: NumberButton: props', props); 
+  console.log('NumberButton.js: NumberButton: props', props); 
   return (
-    <button class='number-buttons'>{props.num}</button>
-      // if ({props.num} === "0") {
-        
-      // }
-    
+    <button className={'index-'+ props.index + ' ' + 'number-buttons'}>{props.num}</button>
   );
 };
 
