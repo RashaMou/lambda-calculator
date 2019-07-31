@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import {numbers} from './../../../data'; // by importing numbers, we are defining it as a variable for use below in numbers.map
 import NumberButton from './NumberButton'; //we import the component so we can return it below
 
-const Numbers = () => { // do we need to define props here to pass them to NumberButton?
+const Numbers = (props) => { // do we need to define props here to pass them to NumberButton?
   // STEP 2 - add the imported data to state
   const [numberState] = useState(numbers)
   // console.log("Numbers.js: Numbers: numberState:", numberState);
@@ -15,7 +15,7 @@ const Numbers = () => { // do we need to define props here to pass them to Numbe
   return (
     <div>
       {numbers.map((number, index) => {
-        return <NumberButton num={number} index={index} key={number}/> // "key" property is only for React to identify number order. Set it and forget it. 
+        return <NumberButton setDisplayValue={props.setDisplayValue} num={number} index={index} key={number}/> // "key" property is only for React to identify number order. Set it and forget it. 
         
       })
         /* STEP 3 - Use .map() to iterate over your array data and return a button

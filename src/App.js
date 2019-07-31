@@ -17,7 +17,11 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [displayValue, setDisplayValue] = useState(0);
-  //TODO: button OnClick -> update displayValue
+  
+  //TODO: setDisplayValue function is called on button click and updates display value
+  //?: How to get value of each button? 
+
+
   return (
     <div className="container">
       <Logo />
@@ -26,14 +30,14 @@ function App() {
         <div className='buttons-wrapper'>
           <div className='buttons-container'>
           <div className='specials-container'>
-            <Specials/>
+            <Specials setDisplayValue={setDisplayValue}/>
           </div>
           <div className='numbers-container'>
-            <Numbers/>
+            <Numbers setDisplayValue={setDisplayValue}/>
           </div>
         </div>   
           <div className='operators-container'>
-          <Operators/>
+          <Operators setDisplayValue={setDisplayValue}/>
         </div>  
         </div>
       </div>

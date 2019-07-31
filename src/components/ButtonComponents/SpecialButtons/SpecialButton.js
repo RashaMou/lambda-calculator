@@ -2,7 +2,7 @@ import React from "react";
 
 const SpecialButton = (props) => { 
   return (
-    <button className='special-buttons'>{props.special}</button>  
+    <button onClick={() => props.setDisplayValue(props.special)} className='special-buttons'>{props.special}</button>  
   );
 };
 

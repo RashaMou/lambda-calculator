@@ -6,7 +6,7 @@ import React from "react";
 const NumberButton = (props) => { // this is coming from Numbers, but how?
   console.log('NumberButton.js: NumberButton: props', props); 
   return (
-    <button className={'index-'+ props.index + ' ' + 'number-buttons'}>{props.num}</button>
+    <button onClick={() => props.setDisplayValue(props.num)} className={'index-'+ props.index + ' ' + 'number-buttons'}>{props.num}</button>
   );
 };
 
